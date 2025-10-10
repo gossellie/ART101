@@ -1,0 +1,30 @@
+.test-div {
+    Background: powderblue;
+    padding: 20px;
+    margin: 20px
+}
+
+.test-div h2 {
+    color: plum
+}
+
+.test-div:hover {
+    background: rgb(155, 116, 167);
+}
+
+button .special {
+    background: peachpuff
+}
+
+
+#house {
+    display: flex; flex-wrap: wrap
+}
+
+
+#split {display: flex;flex-direction:column;}
+
+H1,
+h2 {
+    text-decoration: underline;
+}
