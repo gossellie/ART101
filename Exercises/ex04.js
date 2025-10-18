@@ -1,15 +1,15 @@
 let count = -1;
 let colors= ["Orchid","Coral","HotPink", "Plum"];
-let reminder=count % colors.length;
+
 // add a button titled click me
 $("#needy-button").click(function () {
     count = count + 1;
 
-    
+    let reminder=count % colors.length;
 
     $("#needy-button").html(" clicks: " + count + " color: " + colors[count]);
 
-$("body").css("background-color",colors[count]);
+$("body").css("background-color",colors[reminder]);
 
 
 });
