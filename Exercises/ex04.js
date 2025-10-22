@@ -1,26 +1,21 @@
-let count = -1;
-let colors= ["Orchid","Coral","HotPink", "Plum"];
-
-// add a button titled click me
+let count = 0;
+let colorIndex = 0;
+let mood;
+let colors = ["Orchid", "Coral", "HotPink", "Plum"];
 $("#needy-button").click(function () {
-    count = count + 1;
-
-    let reminder=count % colors.length;
-
-    $("#needy-button").html(" clicks: " + count + " color: " + colors[count]);
-
-$("body").css("background-color",colors[reminder]);
-
-
+   
+   
+    if (count < 5) { mood = "happy!!!!"; }
+   else if ((count >= 5) && (count < 10)) { mood = "Hooo getting tired...."; }
+   else { mood = "so tired!"; }
+  
+  
+  
+   $("#needy-button").html("Clicks: " + count + " Color: " + colors[colorIndex] + " - " + mood);
+   $("body").css("background-color", colors[colorIndex]);
+  
+  
+   count = count + 1;
+   colorIndex = colorIndex + 1;
+   if (colorIndex == 4) { colorIndex = 0; }
 });
-
-
-
-// when it is clicked 
-// add one to the total number
-//shoe the total number
-//on our button
-// show "clicked total number times"
-
-
-// a top limit 
