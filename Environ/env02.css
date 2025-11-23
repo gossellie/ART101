@@ -1,3 +1,4 @@
+
 body {
     background-image: url(OA.jpg);
     background-size: cover;
@@ -33,4 +34,11 @@ h2 {
     align-items: center;
     gap: 50px;
     margin-top: 200px;
+}
+.lead {
+ background-color: rgb(30, 55, 33);
+  padding: 20px;
+  width: 1500px;
+  color: #9bb396;
+  font-family: sans-serif;
 }

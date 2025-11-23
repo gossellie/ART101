@@ -12,11 +12,11 @@
     margin: 50px;
 }
 
-#creature-form div {
+#creature-form DIV {
     margin-bottom: 10px;
 }
 
-#creature-list > div {
+#creature-list>DIV {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,17 +24,14 @@
 }
 
 .creature-body {
+    background: pink;
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 120px;
-    height: 120px;
-    position: relative; /* Wings need this */
+    width: 100px;
+    height: 100px;
 }
 
-/* Eyes */
 .eye {
     height: 18px;
     width: 10px;
@@ -43,12 +40,7 @@
     background: #fff;
 }
 
-/* Mouth */
 .mouth {
-    width: 30px;
-    height: 12px;
-    background: #fff;
-    border: 2px solid #000;
-    border-radius: 0 0 20px 20px;
+    font-size: 24px;
+    text-align: center;
 }
-

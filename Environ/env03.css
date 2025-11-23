@@ -4,21 +4,21 @@ body {
     background-repeat: no-repeat;
 }
 
-#Miffy {
-    width: 500px;
-    margin-top: 500px;
-    margin-left: 650px;
+
+#miffy {
+    width: 320px;
+    max-width: 45%;
+    height: auto;
 }
 
-#huh.images {
-    margin-bottom: 200px;
-    margin-right: 100px;
+.images #huh {
+    max-width: 280px;
+    height: auto;
 }
 
 #speech {
-    width: 500px;
-    ;
-    margin-bottom: 400px
+    width: 300px;
+    margin-bottom: 24px;
 }
 
 .text-container {
@@ -35,7 +35,8 @@ h2,
 #output {
     background-color: rgb(30, 55, 33);
     padding: 20px;
-    width: 1500px;
+    max-width: 980px;
+    margin: 0 auto 12px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +47,15 @@ h2,
 
 .images {
     display: flex;
-    height: 200px;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 24px;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.lead {
+ background-color: rgb(30, 55, 33);
+  padding: 20px;
+  width: 1500px;
+  color: #9bb396;
+  font-family: sans-serif;
 }
