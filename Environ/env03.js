@@ -4,14 +4,16 @@ $(document).ready(function() {
         age: 4,
         Sex: "female",
         Family: true,
-        hasWillpower: true,  
+        hasWillpower: true,
+        isFriendly: true,
         Friends: ["Melanie", "Aggie", "Winnie", "Snuffy", "Boris Bear", "Barbara"],
     };
 
     let megaSentence = "Miffy is a " + Miffy.Breed +
                        " aged " + Miffy.age +
                        " and has friends: " + Miffy.Friends.join(", ") +
-                       ". Does she have alot of willpower " + Miffy.hasWillpower;  
+                       ". Does she have alot of willpower " + Miffy.hasWillpower +
+                       ". Is she friendly? " + Miffy.isFriendly;  
 
     $("#output").html(megaSentence);
 });

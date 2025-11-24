@@ -6,7 +6,7 @@
     <title>Build Your Own Emoji</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="finalproject.css" />
+    <link rel="stylesheet" href="test.css" />
 </head>
 <body>
 
@@ -31,17 +31,22 @@
             <div class="control-group" data-feature="face-shape">
                 <h2>Face Shape</h2>
                 <button class="arrow left-arrow" data-direction="prev">←</button>
-                <div class="feature-display" id="face-shape-display"></div>
-                <input type="file" class="upload-input" data-feature="face-shape" accept="image/*" />
+                <div class="feature-display" id="face-shape-display">
+                
+                </div>
                 <button class="arrow right-arrow" data-direction="next">→</button>
             </div>
 
             <!-- Eyes -->
             <div class="control-group" data-feature="eyes">
                 <h2>Eyes</h2>
+                 <div class="feature-display" id="eyes-display">
+                     <img id="eyes1" src="eyes1.png">
+                     <img id="eyes2" src="eyes2.png">
+                     <img id="eyes3" src="eyes3.png">
+                     <img id="eyes4" src="eyes4.png">
+                </div>
                 <button class="arrow left-arrow" data-direction="prev">←</button>
-                <div class="feature-display" id="eyes-display"></div>
-                <input type="file" class="upload-input" data-feature="eyes" accept="image/*" />
                 <button class="arrow right-arrow" data-direction="next">→</button>
             </div>
 
@@ -50,7 +55,6 @@
                 <h2>Nose</h2>
                 <button class="arrow left-arrow" data-direction="prev">←</button>
                 <div class="feature-display" id="nose-display"></div>
-                <input type="file" class="upload-input" data-feature="nose" accept="image/*" />
                 <button class="arrow right-arrow" data-direction="next">→</button>
             </div>
 
@@ -59,7 +63,6 @@
                 <h2>Mouth</h2>
                 <button class="arrow left-arrow" data-direction="prev">←</button>
                 <div class="feature-display" id="mouth-display"></div>
-                <input type="file" class="upload-input" data-feature="mouth" accept="image/*" />
                 <button class="arrow right-arrow" data-direction="next">→</button>
             </div>
 
