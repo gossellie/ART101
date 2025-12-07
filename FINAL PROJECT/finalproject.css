@@ -1,0 +1,57 @@
+
+:root {
+	--feature-img-size: 80px; 
+
+
+.feature-display img {
+	width: var(--feature-img-size);
+	height: var(--feature-img-size);
+	object-fit: contain; /* preserve aspect ratio inside the square */
+	display: none; /* only .active will be visible */
+}
+
+
+.feature-display img.active {
+	display: block;
+}
+
+
+#emoji-preview .feature-layer img {
+	width: var(--feature-img-size);
+	height: var(--feature-img-size);
+	object-fit: contain;
+}
+
+.feature-display img[style] {
+
+	display: block !important;
+}
+
+
+.feature-display { display:flex; gap:8px; align-items:center; }
+
+#emoji-preview {
+    position: relative;
+    width: 300px;        /* or any size you like */
+    height: 300px;
+    margin: 0 auto;
+}
+
+#emoji-preview {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.feature-layer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#emoji-face-shape { top: 0; }
+#emoji-eyes       { top: 95px; }   /* adjust this */
+#emoji-nose       { top: 150px; }  /* adjust this */
+#emoji-mouth      { top: 210px; }  /* adjust this */
+;}
